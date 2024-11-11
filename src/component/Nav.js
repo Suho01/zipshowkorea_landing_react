@@ -59,7 +59,7 @@ function Nav() {
 
     return (
         <>
-            <div className="lg:flex hidden w-full h-20 justify-between items-center px-[60px] fixed bg-nav-gradient z-50">
+            <div className="lg:flex hidden w-full h-20 justify-between items-center px-[60px] fixed bg-nav-gradient z-50 bg-gradient-black-transparent">
                 <div className="cursor-pointer">
                     <Link to="/" className="text-center">
                         <img src="/images/common/logo.svg" alt="logo" className="w-[140px]"/>
@@ -72,7 +72,7 @@ function Nav() {
                                 className={`${location.pathname === '/about' ? 'bg-[#E0474B] w-[6px] h-[6px] rounded-full inline-block mb-1' : ''}`}></span>&#160; About
                         </Link>
                     </li>
-                    <li
+                    {/*<li
                         className={`cursor-pointer relative py-3 ${
                             ['/service', '/digital', '/arvr', '/3dscan', '/webapp', '/videoprod'].includes(location.pathname)
                                 ? 'text-[#E0474B] font-bold'
@@ -101,7 +101,7 @@ function Nav() {
                                 </div>
                             )
                         }
-                    </li>
+                    </li>*/}
                     <li className={`cursor-pointer ${location.pathname === '/projects' ? 'text-[#E0474B] font-bold' : ''}`}>
                         <Link to="/projects">
                             <span
@@ -144,7 +144,7 @@ function Nav() {
                     </li>
                 </ul>
             </div>
-            <ul className="lg:hidden flex w-full h-[60px] justify-between items-center px-5 fixed bg-nav-gradient z-50">
+            <ul className="lg:hidden flex w-full h-[60px] justify-between items-center px-5 fixed bg-nav-gradient z-50 bg-gradient-black-transparent">
                 <li>
                     <Link to="/" className="lg:hidden block cursor-pointer">
                         <img src="/images/common/logo.svg" alt="logo" className="w-[113px]"/>
@@ -175,7 +175,7 @@ function Nav() {
                                         className={`${location.pathname === '/about' ? 'bg-[#E0474B] w-2 h-2 rounded-full inline-block mb-1.5' : ''}`}></span>
                                 </Link>
                             </li>
-                            <li
+                            {/*<li
                                 className={`mb-8 cursor-pointer relative 
                                 ${['/service', '/digital', '/arvr', '/3dscan', '/webapp', '/videoprod'].includes(location.pathname)
                                     ? 'text-[#E0474B]' 
@@ -204,7 +204,7 @@ function Nav() {
                                         </div>
                                     )
                                 }
-                            </li>
+                            </li>*/}
                             <li className={`mb-8 cursor-pointer ${location.pathname === '/projects' ? 'text-[#E0474B]' : ''}`}>
                                 <Link to="/projects">
                                     Projects &#160;
